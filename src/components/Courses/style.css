@@ -1,0 +1,81 @@
+#courses .courses__container{
+    margin-top: 40px
+}
+
+#courses .slick-prev,
+#courses .slick-next{
+    display: none !important;
+}
+
+#courses .slick-track{
+    display: flex !important;
+    gap: 20px;
+}
+
+#courses .slick-slide{
+    height: inherit !important;
+    background: var(--color-ui-secondary);
+    border-radius: var(--radius-3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+#courses .slick-slide:hover{
+    transform: scale(0.98);
+    background: var(--color-ui-secondary);
+}
+
+#courses .slick-slide > div{
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+#courses .slick-slide > div .picture{
+    height: 250px;
+    overflow: hidden;
+}
+
+#courses .slick-slide > div .picture img{
+    transition: var(--transition);
+}
+
+#courses .slick-slide > div:hover img{
+    transform: scale(1.2);
+}
+
+#courses .slick-slide > div .details{
+    padding: 20px;
+    flex: 1;
+}
+#courses .slick-slide > div .details .name{
+    margin-bottom: 15px;
+}
+
+#courses .slick-slide > div .row{
+    padding: 20px;
+    padding-top: 10px;
+    background: var(--gradient-2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: var(--transition);
+    color: var(--color-warning);
+}
+
+#courses .slick-slide > div:hover .row{
+    background: var(--gradient-1);
+}
+
+#courses .slick-slide > div .row p{
+    color: var(--color-white);
+}
+
+#courses .slick-slide > div .stars__container{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}

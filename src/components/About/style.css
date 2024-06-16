@@ -1,0 +1,72 @@
+#about-us .container{
+    display: grid;
+    grid-template-columns: 330px auto;
+    align-items: center;
+    gap: 40px;
+}
+
+#about-us .students__photo{
+    border-radius: var(--radius-5);
+    aspect-radio: 1/1;
+    overflow: hidden;
+    max-width: 400px;
+    margin: auto;
+}
+
+#about-us .students__photo img{
+    transition: var(--transition);
+}
+
+#about-us .students__photo:hover img{
+    transform: scale(1.3);
+}
+
+#about-us .students__photo:hover::before{
+    bottom: -100%;
+}
+
+#about-us .about__cards__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px ;
+}
+
+#about-us .about__card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: var(--color-ui-secondary);
+    border-radius: var(--radius-3);
+    transition: var(--transition);
+    border: solid 2px transparent;
+}
+
+#about-us .about__card:hover{
+    background: transparent;
+    border-color: var(--color-primary-accent);
+}
+
+#about-us .about__card .icon__container{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 25px;
+}
+
+#about-us .about__card:hover .icon__container{
+    transform: scale(1.2);
+}
+
+@media (max-width:900px){
+    #about-us .container{
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width:500px){
+    #about-us .about__cards__container{
+        grid-template-columns: 100%;
+    }
+}

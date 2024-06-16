@@ -1,0 +1,7 @@
+.social__handles__container{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
